@@ -1,29 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import { BrowserRouter as Router } from "react-router-dom";
+import PartnerSelector from './components/PartnerSelector';
+import NavBar from './components/NavBar/NavBar';
+import Bodies from './components/Bodies';
+import Body from './components/Body';
+import { Container } from 'semantic-ui-react';
+import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
   state = {}
+
   async componentDidMount() {
-    const res = await fetch('/api/partners/acme/bodies/female');
 
-    let data = await res.json();
+    // const res = await fetch(`/api/partners/${this.state.partner}/bodies`);
 
-    this.setState(data)
+    // const bodies = await res.json();
+
+    // this.setState({ bodies })
   }
 
   render() {
-    console.log(this.state);
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          {this.state.gender}
-        </p>
-      </div>
+      <Router >
+        <div>
+          <Route exact path="/" component={PartnerSelector} />
+          <Route path="/:partner" component={NavBar} />
+          <Route exact path="/:partner" component={Bodies} />
+          <Route path="/:partner/:gender/:shape" component={Body} />
+        </div>
+      </Router>
     );
   }
 }

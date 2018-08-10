@@ -1,5 +1,22 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.filter.menu.ui.secondary a  {
+  font-size: 40px;
+  color: grey;
+}
+.ui.secondary.menu .active.item {
+  background: inherit !important;
+}
+.ui.secondary.menu .item:hover {
+  background: inherit !important;
+}
+#box {
+    text-align: center;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 1400;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
 }

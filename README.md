@@ -129,7 +129,7 @@ http://localhost:3000/api/partners/acme/bodies/female
 ```
 
 ## Your Notes Go Here
-
+The realistic user flow would start with a partner login page but I just used a dropdown selector for the purpose of this demo.
 ## License
 
 This project is MIT licensed. This means that you are allowed to freely use this for your personal portfolio.
