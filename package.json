@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "start": "node ./api/server.js",
+    "start": "node index.js",
     "server": "nodemon ./api/server.js",
     "client": "npm run start --prefix client",
     "deploy": "gh-pages -d build",
