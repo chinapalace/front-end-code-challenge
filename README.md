@@ -1,5 +1,4 @@
-Avametric Front End Development Challenge
-========================================
+# Avametric Front End Development Challenge
 
 Hi there!
 
@@ -25,7 +24,7 @@ We have created a simple [NodeJS](https://nodejs.org) application which:
 1. Bundles your source code and serves it through http://localhost:3000/
 2. Provides **mock** data through http://localhost:3000/api/
 
-Your challenge is to build something interesting that makes use of the mock data provided. 
+Your challenge is to build something interesting that makes use of the mock data provided.
 
 You can choose whichever technologies you like to create this application. Feel
 free to make changes to _any_ of the files in this repository, or to swap out
@@ -43,10 +42,10 @@ any of the technologies we've provided. It's your party. 😎
 
 1. Fork [this repository](https://github.com/avametric/front-end-code-challenge)
    to your GitHub account
-2. Clone *your* fork to your development machine
-2. Install the package dependencies by running `npm install` (or `yarn` if you prefer)
-3. Start the application server by running `npm start`
-4. Open your browser to http://localhost:3000
+2. Clone _your_ fork to your development machine
+3. Install the package dependencies by running `npm install` (or `yarn` if you prefer)
+4. Start the application server by running `npm start`
+5. Open your browser to http://localhost:3000
 
 ## Submission
 
@@ -99,21 +98,26 @@ proxied to an express server running on port 3001 that servs the contents of
 the `data/` folder. You can make HTTP `GET` requests against the following endpoints:
 
 #### GET /api/partners
+
 Returns an array of partners that can be searched for bodies. For the purposes
 of this challenge there are only 3 partners available.
 
 #### GET /api/partners/:partnerId
+
 Returns an object representing the partner with the given `:partnerId`.
 
 For example:
+
 ```
 http://localhost:3000/api/partners/acme/
 ```
 
 #### GET /api/partners/:partnerId/bodies
+
 Returns an array bodies grouped by gender contained within the partner.
 
 For example:
+
 ```
 http://localhost:3000/api/partners/acme/bodies
 ```
@@ -124,12 +128,16 @@ Similar to `/api/partners/:partnerId/bodies`, but returns only a single gender b
 object for the `:genderId` given.
 
 For Example:
+
 ```
 http://localhost:3000/api/partners/acme/bodies/female
 ```
 
 ## Your Notes Go Here
+
+This project is a web app designed to give Avametric's partners visibility and control over the digital bodies their clothes are being rendered onto.
 The realistic user flow would start with a partner login page but I just used a dropdown selector for the purpose of this demo.
+
 ## License
 
 This project is MIT licensed. This means that you are allowed to freely use this for your personal portfolio.

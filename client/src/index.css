@@ -1,6 +1,8 @@
-.filter.menu.ui.secondary a  {
-  font-size: 40px;
-  color: grey;
+.filter.menu.ui.secondary a {
+  font-size: 4rem;
+  color: #42535a;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 .ui.secondary.menu .active.item {
   background: inherit !important;
@@ -9,14 +11,65 @@
   background: inherit !important;
 }
 #box {
-    text-align: center;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    bottom: 0;
-    z-index: 1400;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  left: 224px;
+  right: auto;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1400;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+div.ui.segment {
+  line-height: 1.45rem;
+}
+.ui.tabular.menu .item {
+  background-color: #0f1017;
+  border-color: #0f1017 !important;
+  color: #42535a !important;
+  padding: 5px !important;
+}
+.ui.tabular.menu .item:hover {
+  color: #009fff !important;
+}
+.ui.tabular.menu .active.item {
+  background-color: #0f1017 !important;
+  border-bottom: 1px solid white;
+  color: #009fff !important;
+  margin-bottom: 0 !important;
+  padding: 5px !important;
+}
+
+.ui.attached.tabular.menu {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.ui.bottom.attached.segment.active.tab.inverted {
+  border: none;
+}
+tr:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.ui.centered.grid {
+  text-align: left !important;
+}
+.ui.dropdown .menu > .item {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.ui.secondary.menu .active.item {
+  color: white !important;
+  font-size: 4em;
+}
+.ui.secondary.menu a.item:hover {
+  color: white !important;
+}
+.ui.selection.dropdown {
+  background: white !important;
+  color: black !important;
+}
+.ui.header:first-child {
+  margin-top: 10px !important;
 }
