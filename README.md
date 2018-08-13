@@ -135,8 +135,17 @@ http://localhost:3000/api/partners/acme/bodies/female
 
 ## Your Notes Go Here
 
-This project is a web app designed to give Avametric's partners visibility and control over the digital bodies their clothes are being rendered onto.
-The realistic user flow would start with a partner login page but I just used a dropdown selector for the purpose of this demo.
+This project is a web app designed to give Avametric's partners visibility and control over the digital bodies their clothes are being rendered onto. My end goal for this app is for it to allow Avametric's partners to manage and edit custom body types for their customers, so the app is built towards that functionality.
+
+My next step is to expand the API so that it could edit and create new bodies as well. Then I'll add inline editing for all the measurements displayed on the body pages. I'll also build out the functionality of the floating action button in the bottom-right of the screen. It will link to a form for creating a new body type.
+
+I'd also like to add a more interesting graphical element. It would be great to render bodies on screen based on the measurements and have the rendering change in response to changing measurements. A marker element that layers on top of the body image, to point out the location of specific measurements, could also be a useful feature that would be easier to implement.
+
+In the "snackbar" in the bottom-left corner, only the "shape" category is currently functional but the "gender" and "size" options will have the same functionality.
+
+To polish the UI, my next step would be to add some subtle animated transitions between pages.
+
+Note: The realistic user flow would start with a partner login page but I just used a dropdown selector for the purpose of this demo.
 
 ## License
 
