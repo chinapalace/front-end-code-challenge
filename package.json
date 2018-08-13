@@ -6,6 +6,7 @@
     "start": "node ./api/server.js",
     "server": "nodemon ./api/server.js",
     "client": "npm run start --prefix client",
+    "deploy": "gh-pages -d build",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "local-data-server": "node ./api/server.js"
   },
@@ -15,6 +16,7 @@
     "express": "4.16.2"
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "nodemon": "^1.18.3",
     "random-seed": "^0.3.0"
   }

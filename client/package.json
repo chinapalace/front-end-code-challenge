@@ -4,8 +4,9 @@
   "private": true,
   "proxy": {
     "/api/*": {
-      "target": "http://localhost:5000"
-    }
+      "target": "http://localhost:5001"
+    },
+    "homepage": "http://chinapalace.github.io/front-end-code-challenge"
   },
   "dependencies": {
     "gh-pages": "^1.2.0",
