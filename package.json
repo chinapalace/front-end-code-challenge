@@ -8,7 +8,8 @@
     "client": "npm run start --prefix client",
     "deploy": "gh-pages -d build",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "local-data-server": "node ./api/server.js"
+    "local-data-server": "node ./api/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "devDependencies": {
     "body-parser": "1.18.2",
